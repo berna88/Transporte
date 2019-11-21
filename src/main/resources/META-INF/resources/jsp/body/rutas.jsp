@@ -34,6 +34,7 @@
 						      <option>4</option>
 						      <option>5</option>
 					    	</select>
+					    	<small>Ver mapa de la ruta</small>
 					    </div>
 					    <div class="col-md-4">
 					      <label>Capacidad</label>
