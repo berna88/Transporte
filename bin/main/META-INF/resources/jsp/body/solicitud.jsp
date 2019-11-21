@@ -7,15 +7,15 @@
 			  <div class="row">
 			    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
 			    <label>Empleado<span class="amarillo">*</span></label>
-			      <input type="text" class="form-control form-control-sm" placeholder="First name">
+			      <input type="text" class="form-control form-control-sm" >
 			    </div>
 			    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
 			    	<label>Teléfono (móvil)<span class="amarillo">*</span></label>
-			      	<input type="text" class="form-control form-control-sm" placeholder="Last name">
+			      	<input type="text" class="form-control form-control-sm" >
 			    </div>
 			    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
 			    	<label>Fecha<span class="amarillo">*</span></label>
-			      	<input type="text" class="form-control form-control-sm" placeholder="Last name">
+			      	<input type="text" class="form-control form-control-sm" >
 			    </div>
 			    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
 			    	<label for="exampleFormControlSelect1">Ruta elegida<span class="amarillo">*</span></label>
