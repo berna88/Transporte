@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/banner.css"%>'>
 <link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/general.css"%>'>
-
+<link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/form.css"%>'>
 <%@ include file="jsp/header/banner.jsp" %>
 
 <body class="container">

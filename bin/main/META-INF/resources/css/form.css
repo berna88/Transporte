@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#transporteSolicitud input{
+	border-color: #cab874;
+    background: black;
+    color: white;
+}
+
+#transporteSolicitud select{
+	border-color: #cab874;
+    background: black;
+    color: white;
+}
+.amarillo{
+	color: #cab874;
+}
