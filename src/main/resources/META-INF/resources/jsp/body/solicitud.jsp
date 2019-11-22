@@ -41,18 +41,21 @@
 			    	<label for="exampleFormControlSelect1" class="font-weight-bold">Reglamento de transporte</label>
 			  	</div>
 			  	<div class="col-sm-12 mb-5">
-			        <div class="form-check mb-3">
-			          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-			          <label class="form-check-label pl-2" for="gridRadios1">
-			            He leido y acepto Addendum el reglamento para transporte de empleados de Jóse Cuervo.
-			          </label>
-			        </div>
+			        
 			        <div class="form-check">
-			          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-			          <label class="form-check-label pl-2" for="gridRadios2">
-			            He leido y acepto el reglamento de Transporte general UTEP.
-			          </label>
-			        </div>
+						<label class="terminosVacaciones">
+						  <input id="CheckPoliticas" type="radio" name="radio" required="required">
+						  <span class="checkmark"></span>
+						  He leido y acepto <a href="" class="amarillo">Addendum el reglamento para transporte de empleados de José Cuervo.</a>
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="terminosVacaciones">
+						  <input id="CheckReglamentos" type="radio" name="radio" required="required">
+						  <span class="checkmark"></span>
+						  He leido y acepto el reglamento de <a href="" class="amarillo">Transporte general UTEP.</a>
+						</label>
+					</div>
 			    </div>
 			    <div class="col-sm-12">
 			    	<button type="submit" class="pl-6 pr-6 btn btn-primary border border-0 float-right font-weight-bold" style="background-color: #cbb874;color: black;">Solicitar</button>
