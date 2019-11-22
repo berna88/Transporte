@@ -19,11 +19,8 @@
 				    	<a class="nav-link" id="pills-seccion1-tab" data-toggle="tab" href="#pills-seccion1" role="tab" aria-controls="pills-seccion1" aria-selected="false">Solicitud</a>
 				  	</li>
 				</ul>
-			</div>
-			<div class="tab-content mb-50" id="pills-tabContent">
-			
-			  	<%@ include file="linetime.jsp" %>
-			  	
-			  	<%@ include file="solicitud.jsp" %>
-			  	
-			</div>
+</div>
+<div class="tab-content mb-50" id="pills-tabContent">
+	<%@ include file="linetime.jsp" %>
+	<%@ include file="solicitud.jsp" %>	  	
+</div>
