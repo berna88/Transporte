@@ -1,10 +1,13 @@
 package com.consistent.cuervo.transporte.portlet;
 
+import com.consistent.cuervo.transporte.configuracion.Configuration;
 import com.consistent.cuervo.transporte.constants.TrasportePortletKeys;
-
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 
 import java.io.IOException;
+import java.util.Map;
 
 import javax.portlet.Portlet;
 import javax.portlet.PortletException;
@@ -13,10 +16,16 @@ import javax.portlet.RenderResponse;
 
 import org.osgi.service.component.annotations.Component;
 
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Modified;
+
+import aQute.bnd.annotation.metatype.Configurable;
+
 /**
  * @author bernardohernandez
  */
 @Component(
+		configurationPid = "com.consistent.cuervo.transporte.configuracion.Configuration",
 	immediate = true,
 	property = {
 		"com.liferay.portlet.display-category=category.sample",
@@ -34,7 +43,22 @@ public class TrasportePortlet extends MVCPortlet {
 	@Override
 	public void doView(RenderRequest renderRequest, RenderResponse renderResponse)
 			throws IOException, PortletException {
+		renderRequest.setAttribute(Configuration.class.getName(), configuration);
 		// TODO Auto-generated method stub
+		_log.info("*** article id ***"+configuration.articleId());
+		_log.info("*** template id ***"+configuration.templateId());
 		super.doView(renderRequest, renderResponse);
 	}
+	
+	@Activate
+	@Modified
+	protected void active(Map<Object, Object> properties){
+		_log.info("Llamando a active");
+		configuration = Configurable.createConfigurable(Configuration.class, properties);
+	}
+	
+	
+	private static final Log _log = LogFactoryUtil.getLog(TrasportePortlet.class);
+	
+	private volatile Configuration configuration;
 }

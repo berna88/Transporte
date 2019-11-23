@@ -1,3 +1,4 @@
+
 <%@ include file="init.jsp" %>
 
 <link rel="stylesheet" type="text/css" href='<%=request.getContextPath()+"/css/banner.css"%>'>
@@ -12,3 +13,4 @@
  		</article>
  	</section>
 </body>
+<liferay-journal:journal-article articleId="35027" groupId="<%=themeDisplay.getSiteGroupId()%>" ddmTemplateKey="35023" />
