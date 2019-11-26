@@ -1,7 +1,8 @@
 package com.consistent.cuervo.transporte.portlet;
 
-import com.consistent.cuervo.transporte.configuracion.Configuration;
+import com.consistent.cuervo.transporte.configuracion.ConfigurationTransporte;
 import com.consistent.cuervo.transporte.constants.TrasportePortletKeys;
+import com.liferay.portal.configuration.metatype.bnd.util.ConfigurableUtil;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
@@ -19,13 +20,13 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Modified;
 
-import aQute.bnd.annotation.metatype.Configurable;
 
 /**
  * @author bernardohernandez
  */
 @Component(
-		configurationPid = "com.consistent.cuervo.transporte.configuracion.Configuration",
+		
+	configurationPid = "com.consistent.cuervo.transporte.configuracion.ConfigurationTransporte",
 	immediate = true,
 	property = {
 		"com.liferay.portlet.display-category=category.sample",
@@ -43,7 +44,7 @@ public class TrasportePortlet extends MVCPortlet {
 	@Override
 	public void doView(RenderRequest renderRequest, RenderResponse renderResponse)
 			throws IOException, PortletException {
-		renderRequest.setAttribute(Configuration.class.getName(), configuration);
+		renderRequest.setAttribute(ConfigurationTransporte.class.getName(), configuration);
 		// TODO Auto-generated method stub
 		_log.info("*** article id ***"+configuration.articleId());
 		_log.info("*** template id ***"+configuration.templateId());
@@ -54,11 +55,11 @@ public class TrasportePortlet extends MVCPortlet {
 	@Modified
 	protected void active(Map<Object, Object> properties){
 		_log.info("Llamando a active");
-		configuration = Configurable.createConfigurable(Configuration.class, properties);
+		configuration = ConfigurableUtil.createConfigurable(ConfigurationTransporte.class, properties);
 	}
 	
 	
 	private static final Log _log = LogFactoryUtil.getLog(TrasportePortlet.class);
 	
-	private volatile Configuration configuration;
+	private volatile ConfigurationTransporte configuration;
 }
