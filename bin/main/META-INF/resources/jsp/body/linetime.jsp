@@ -28,7 +28,144 @@
 			  		<div class="container">
 			  		    <div class="row">
 			  		        <div class="col-md-12">
-			  		            <liferay-journal:journal-article articleId="<%=articuloId%>" groupId="<%=themeDisplay.getSiteGroupId()%>" ddmTemplateKey="<%=templateId%>" />
+			  		            <div class="main-timeline mb-50">
+			  		            	<div class="timeline year mb-50">
+			  		            	    <div class="timeline-year">
+			  		            	    	<p>2019</p>
+			  		            	    </div>
+			  		            	</div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                        <span class="fa-stack fa-1x clasificados-icon mr-10">
+			  		                            <i class="fas fa-square-full fa-stack-1x"></i>
+			  		                            <i class="fas fa-download fa-stack-1x fa-inverse clasificados-user"></i>
+			  		                        </span>
+			  		                        <a href="#" class="enlace-resaltado float-right">Ver más</a>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                        <span class="fa-stack fa-1x clasificados-icon mr-10 float-left">
+			  		                            <i class="fas fa-circle fa-stack-1x"></i>
+			  		                            <i class="fas fa-download fa-stack-1x fa-inverse clasificados-user"></i>
+			  		                        </span>
+			  		                        <a href="#" class="enlace-resaltado float-right">Ver más</a>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline year"></div>
+			  		                <div class="timeline year mt-50 mb-50">
+			  		                    <div class="timeline-year">
+			  		                    	<p>2018</p>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                        <img src="img/prueba-autos.jpg" alt="" class="img-fluid mb-25">
+			  		                        <a href="#" class="enlace-resaltado float-right">Ver más</a>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                        <ul class="lista-normal">
+			  		                        	<li>
+			  		                        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius quo, et ea voluptas in perspiciatis cupiditate harum libero.
+			  		                        	</li>
+			  		                        	<li>
+			  		                        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius quo, et ea voluptas in perspiciatis cupiditate harum libero.
+			  		                        	</li>
+			  		                        </ul>
+			  		                        <img src="img/prueba-autos.jpg" alt="" class="img-fluid mb-25">
+			  		                        <span class="fa-stack fa-1x clasificados-icon mr-10 float-left">
+			  		                            <i class="fas fa-circle fa-stack-1x"></i>
+			  		                            <i class="fas fa-download fa-stack-1x fa-inverse clasificados-user"></i>
+			  		                        </span>
+			  		                        <a href="#" class="enlace-resaltado float-right">Ver más</a>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline year"></div>
+			  		                <div class="timeline year mt-50 mb-50">
+			  		                    <div class="timeline-year">
+			  		                    	<p>2017</p>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                        <ul class="lista-normal">
+			  		                        	<li>
+			  		                        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius quo, et ea voluptas in perspiciatis cupiditate harum libero.
+			  		                        	</li>
+			  		                        	<li>
+			  		                        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eius quo, et ea voluptas in perspiciatis cupiditate harum libero.
+			  		                        	</li>
+			  		                        </ul>
+			  		                        <span class="fa-stack fa-1x clasificados-icon mr-10 float-left">
+			  		                            <i class="fas fa-circle fa-stack-1x"></i>
+			  		                            <i class="fas fa-download fa-stack-1x fa-inverse clasificados-user"></i>
+			  		                        </span>
+			  		                        <span class="fa-stack fa-1x clasificados-icon mr-10 float-left">
+			  		                            <i class="fas fa-circle fa-stack-1x"></i>
+			  		                            <i class="fas fa-download fa-stack-1x fa-inverse clasificados-user"></i>
+			  		                        </span>
+			  		                        <span class="fa-stack fa-1x clasificados-icon mr-10 float-left">
+			  		                            <i class="fas fa-circle fa-stack-1x"></i>
+			  		                            <i class="fas fa-download fa-stack-1x fa-inverse clasificados-user"></i>
+			  		                        </span>
+			  		                        <a href="#" class="enlace-resaltado float-right">Ver más</a>
+			  		                    </div>
+			  		                </div>
+			  		                <div class="timeline">
+			  		                    <div class="timeline-content">
+			  		                    	<p class="timeline-fecha">Mayo 28 2019</p>
+			  		                        <h3 class="titulon2">Nombre de aconteciomiento</h3>
+			  		                        <p class="timeline-description">
+			  		                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo.
+			  		                        </p>
+			  		                    </div>
+			  		                </div>
+			  		            </div>
 			  		        </div>
 			  		    </div>
 			  		</div>

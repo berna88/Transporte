@@ -40,26 +40,8 @@ import org.osgi.service.component.annotations.Modified;
 	service = Portlet.class
 )
 public class TrasportePortlet extends MVCPortlet {
-	
-	@Override
-	public void doView(RenderRequest renderRequest, RenderResponse renderResponse)
-			throws IOException, PortletException {
-		renderRequest.setAttribute(ConfigurationTransporte.class.getName(), configuration);
-		// TODO Auto-generated method stub
-		_log.info("*** article id ***"+configuration.articleId());
-		_log.info("*** template id ***"+configuration.templateId());
-		super.doView(renderRequest, renderResponse);
-	}
-	
-	@Activate
-	@Modified
-	protected void active(Map<Object, Object> properties){
-		_log.info("Llamando a active");
-		configuration = ConfigurableUtil.createConfigurable(ConfigurationTransporte.class, properties);
-	}
-	
-	
 	private static final Log _log = LogFactoryUtil.getLog(TrasportePortlet.class);
+	
 	
 	private volatile ConfigurationTransporte configuration;
 }
